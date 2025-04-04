@@ -52,7 +52,7 @@ export default function NavBar() {
 
 						{/* Sign Out Button */}
 						<SignOutButton>
-							<button className='ml-4 px-4 py-2 bg-emerald-500 text-white rounded hover:bg-emerald-600 transition'>
+							<button className='ml-4 px-4 py-2 bg-emerald-500 text-white rounded hover:bg-emerald-600 transition cursor-pointer'>
 								Sign Out
 							</button>
 						</SignOutButton>
@@ -65,7 +65,7 @@ export default function NavBar() {
 							Home
 						</Link>
 						<Link
-							href={isSignedIn ? '/subscribe' : '/sign-up'}
+							href='/subscribe'
 							className='text-gray-700 hover:text-emerald-500 transition-colors'>
 							Subscribe
 						</Link>
@@ -73,7 +73,7 @@ export default function NavBar() {
 						<Link
 							href='/sign-up'
 							className='px-4 py-2 bg-emerald-500 text-white rounded hover:bg-emerald-600 transition'>
-							Sign Up
+							Log In
 						</Link>
 					</SignedOut>
 				</div>
