@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useUser, SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
 
 export default function NavBar() {
-	const { isLoaded, isSignedIn, user } = useUser()
+	const { isLoaded, user } = useUser()
 
 	if (!isLoaded) {
 		return null
